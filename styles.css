@@ -1,0 +1,41 @@
+/* basic styling for the body*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+    
+/* Styling for the game board */
+#gameBoard {
+display: grid;
+grid-template-columns: repeat(3, 100px);
+grid-gap: 5px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Add some visual feedback when hovering over a cell */
+.cell:hover {
+background-color: #c1da93;
+}
+
+/* Styling for the reset button */
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
