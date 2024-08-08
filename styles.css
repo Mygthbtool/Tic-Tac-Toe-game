@@ -7,29 +7,89 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-image: url('wallpaper.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color:#f0f0f0;
+}
+
+/*---hide elements with class hidden---*/
+.hidden{
+    display: none;
+}
+
+#startScreen h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style for the start button */
+#startButton {
+    width: 1in; /* Width of the button */
+    height: 1in; /* Height of the button */
+    font-size: 16px; /* Font size of the button text*/
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove default border */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* styling for player info section */
+#playerInfo{
+    margin-bottom: 20px;
+    text-align: center;
 }
     
 /* Styling for the game board */
-#gameBoard {
-display: grid;
-grid-template-columns: repeat(3, 100px);
-grid-gap: 5px;
+#grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
 }
 
 .cell {
-    width: 100px;
-    height: 100px;
-    font-size: 2em;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    width: 150px;
+    height: 150px;
+    /* font-size: 2em; */
+    background-color: lightgray;
+    background-size: cover;
+    border: 1px solid black;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/* Pastel colors for the cells */
+.cell:nth-child(odd) {
+    background-color: #FFB6C1; /* Pastel red */
+}
+.cell:nth-child(even) {
+    background-color: #98FB98; /* Pastel green */
+}
+
+/* Style for the current player text */
+#currentPlayer {
+    color: #32CD32; /* Green text color */
+    font-size: 20px; /* Font size for the current player text */
+    margin: 10px 0; /* Margin above and below the text */
+}
+
+/* Style for the result section */
+#resultImage {
+    width: 100px; /* Width of result images */
+    height: 100px; /* Height of result images */
+}
+
 /* Add some visual feedback when hovering over a cell */
 .cell:hover {
-background-color: #c1da93;
+    background-color: #c1da93;
 }
 
 /* Styling for the reset button */
@@ -38,4 +98,10 @@ background-color: #c1da93;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
+}
+
+/* styling for the result section*/
+#result {
+    text-align: center;
+    margin-top: 20px;
 }
