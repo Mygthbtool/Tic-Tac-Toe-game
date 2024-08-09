@@ -72,10 +72,10 @@ body {
 
 /* Pastel colors for the cells */
 .cell:nth-child(odd) {
-    background-color: #FFB6C1; /* Pastel red */
+    background-color: #aa0a22; /* Pastel red */
 }
 .cell:nth-child(even) {
-    background-color: #98FB98; /* Pastel green */
+    background-color: #2542b5; /* Pastel green */
 }
 
 /* Style for the current player text */
@@ -83,6 +83,7 @@ body {
     color: #32CD32; /* Green text color */
     font-size: 20px; /* Font size for the current player text */
     margin: 10px 0; /* Margin above and below the text */
+    margin-left: 40px;
 }
 
 /* Style for the result section */
