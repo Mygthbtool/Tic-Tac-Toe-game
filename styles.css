@@ -50,8 +50,8 @@ body {
 /* Styling for the game board */
 #grid {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 100px);
     grid-gap: 2px;
     /* justify-content: center;
     margin: 20px auto; */
@@ -83,7 +83,7 @@ body {
     color: #32CD32; /* Green text color */
     font-size: 20px; /* Font size for the current player text */
     margin: 10px 0; /* Margin above and below the text */
-    margin-left: 40px;
+    margin-left: 28%;
 }
 
 /* Style for the result section */
@@ -100,7 +100,7 @@ body {
 /* Styling for the reset button */
 #resetButton {
     margin-top: 20px;
-    margin-left: 28%;
+    margin-left: 37%;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
