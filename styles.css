@@ -25,6 +25,7 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
     color: #e5ecec;
+    text-shadow: 1px 2px 2px #CE5937;
 }
 
 /* Style for the start button */
